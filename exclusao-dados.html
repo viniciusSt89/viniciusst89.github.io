@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Exclusão de Dados - SmartVendasPRO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #00B75D;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #00B75D;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .info-box {
+            background: #f0f9ff;
+            border-left: 4px solid #00B75D;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        
+        .steps li {
+            counter-increment: step-counter;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #00B75D;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .contact-info strong {
+            color: #00B75D;
+        }
+        
+        .email-link {
+            color: #00B75D;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .email-link:hover {
+            text-decoration: underline;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        ul li {
+            margin-bottom: 8px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #00B75D;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗑️ Solicitar Exclusão de Dados</h1>
+        <p class="subtitle">SmartVendasPRO - Direito à Exclusão de Dados Pessoais</p>
+        
+        <div class="section">
+            <p>
+                Você tem o direito de solicitar a exclusão de seus dados pessoais coletados pelo aplicativo SmartVendasPRO, 
+                conforme previsto na Lei Geral de Proteção de Dados (LGPD) e outras legislações aplicáveis.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>📋 Dados que Podem Ser Excluídos</h2>
+            <p>Os seguintes dados podem ser excluídos mediante solicitação:</p>
+            <ul>
+                <li><strong>Dados de autenticação:</strong> Email, nome, foto de perfil e ID do usuário armazenados no Firebase</li>
+                <li><strong>Dados financeiros:</strong> Vendas, compras, parcelas e pagamentos armazenados localmente no dispositivo</li>
+                <li><strong>Dados de backup:</strong> Dados sincronizados no Google Drive (se houver backup ativo)</li>
+                <li><strong>Dados de assinatura:</strong> Status PRO e histórico de compras</li>
+                <li><strong>Configurações do app:</strong> Preferências e configurações pessoais</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>⚠️ Importante Antes de Solicitar</h2>
+            <div class="warning-box">
+                <p><strong>Atenção:</strong> A exclusão de dados é <strong>irreversível</strong>. Após a exclusão:</p>
+                <ul>
+                    <li>Todos os seus dados financeiros (vendas, compras, parcelas) serão permanentemente removidos</li>
+                    <li>Sua conta será desativada e você precisará criar uma nova conta para usar o app novamente</li>
+                    <li>Não será possível recuperar nenhum dado após a exclusão</li>
+                    <li>Se você tiver uma assinatura PRO ativa, ela será cancelada</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📝 Como Solicitar a Exclusão</h2>
+            <p>Para solicitar a exclusão dos seus dados, siga os passos abaixo:</p>
+            
+            <ol class="steps">
+                <li>
+                    <strong>Envie um email</strong> para o endereço de suporte informando sua solicitação de exclusão de dados.
+                    <br><br>
+                    <div class="contact-info">
+                        <strong>📧 Email para solicitação:</strong><br>
+                        <a href="mailto:suporte@smartvendaspro.com" class="email-link">suporte@smartvendaspro.com</a>
+                        <br><br>
+                        <strong>Assunto:</strong> Solicitação de Exclusão de Dados<br>
+                        <strong>No corpo do email, informe:</strong>
+                        <ul>
+                            <li>Seu nome completo</li>
+                            <li>Email usado no app</li>
+                            <li>Confirmação de que deseja excluir todos os dados</li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li>
+                    <strong>Exclua os dados localmente no app</strong> (opcional, mas recomendado):
+                    <ul>
+                        <li>Abra o app SmartVendasPRO</li>
+                        <li>Vá em Configurações → Dados → Limpar Todos os Dados</li>
+                        <li>Confirme a exclusão</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <strong>Remova o backup do Google Drive</strong> (se houver):
+                    <ul>
+                        <li>Acesse seu Google Drive</li>
+                        <li>Procure pela pasta "SmartVendasPRO" ou arquivos de backup</li>
+                        <li>Exclua os arquivos manualmente</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <strong>Aguarde confirmação</strong>:
+                    <ul>
+                        <li>Responderemos seu email em até <strong>30 dias úteis</strong></li>
+                        <li>Confirmaremos a exclusão de todos os dados do nosso sistema</li>
+                        <li>Você receberá um email de confirmação quando a exclusão for concluída</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>🔒 Dados que Não Podem Ser Excluídos</h2>
+            <div class="info-box">
+                <p>Alguns dados podem ser mantidos por motivos legais ou técnicos:</p>
+                <ul>
+                    <li><strong>Dados de compras in-app:</strong> Histórico de transações na Google Play (gerenciado pela Google)</li>
+                    <li><strong>Dados de anúncios:</strong> Dados coletados pelo Google AdMob (gerenciado pela Google)</li>
+                    <li><strong>Logs de sistema:</strong> Logs técnicos necessários para operação do serviço (mantidos por período limitado)</li>
+                </ul>
+                <p>
+                    <strong>Nota:</strong> Para excluir dados relacionados ao Google AdMob ou Google Play, 
+                    você precisará entrar em contato diretamente com a Google através das políticas de privacidade deles.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>⏱️ Prazo para Exclusão</h2>
+            <p>
+                Conforme a LGPD, processaremos sua solicitação de exclusão em até <strong>15 dias úteis</strong> 
+                a partir da data de recebimento da solicitação. Em casos complexos, podemos estender este prazo 
+                para até <strong>30 dias úteis</strong>, informando você previamente.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>📞 Dúvidas</h2>
+            <p>
+                Se você tiver dúvidas sobre o processo de exclusão de dados ou sobre seus direitos, 
+                entre em contato conosco através do email de suporte.
+            </p>
+        </div>
+        
+        <a href="https://viniciusst89.github.io/privacidade.html" class="back-link">← Voltar para Política de Privacidade</a>
+    </div>
+</body>
+</html>
+
